@@ -1,7 +1,7 @@
 //! # typing_state
 
 // Derive PartialEq so the implementation of "==" is implicit
-#[derive(Debug, PartialEq, Clone)]
+#[derive(Debug, Default, PartialEq, Clone)]
 pub struct TypingState {
     pub typed:      String,
     pub mistyped:   String,
